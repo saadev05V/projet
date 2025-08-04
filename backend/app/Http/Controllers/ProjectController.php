@@ -25,7 +25,7 @@ class ProjectController extends Controller
         $createdProjects = $user->projects()->with('user', 'members')->get();
 
         // Get projects where the user is a member (excluding those already created by the user)
-        $memberOfProjects = $user->memberOfProjects()->where('user_id', '!=', $user->id)->with('user', 'members')->get();
+        $memberOfProjects = $user->memberOfProjects()->where('projects.user_id', '!=', $user->id)->with('user', 'members')->get();
 
         // Combine and ensure unique projects
         $projects = $createdProjects->merge($memberOfProjects)->unique('id')->sortByDesc('created_at');

@@ -18,5 +18,6 @@ Route::middleware('auth:sanctum')->group(function () {
     // Project routes
     Route::apiResource('projects', ProjectController::class);
 
-    // Later we'll add Task routes nested under projects, e.g., projects/{project}/tasks
+    // Task routes nested under projects
+    Route::apiResource('projects.tasks', TaskController::class);
 });
