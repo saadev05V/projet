@@ -1,0 +1,84 @@
+/* Shared Styles for Both Pages */
+.auth-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.auth-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.auth-table td {
+  padding: 8px 0;
+}
+
+.auth-table input {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.auth-button {
+  width: 100%;
+  padding: 12px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.error-message {
+  color: #f44336;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.auth-switch {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.auth-switch a {
+  text-decoration: none;
+}
+
+
+.login-button {
+  background-color: #2196F3;
+}
+
+.login-button:hover {
+  background-color: #2196F3;
+}
+
+.login-link {
+  color: #2196F3;
+}
+
+
+.register-button {
+  background-color: #2196F3;
+}
+
+.register-button:hover {
+  background-color: #0b7dda;
+}
+
+.register-link {
+  color: #0b7dda;
+}
+
+
+input[type="tel"] {
+  direction: ltr;
+  text-align: left;
+}
